@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import {GoogleButton} from "./GoogleButton";
 
 function App() {
   return (
     <div className="App">
- OAUTH2 TRAIN
+ <GoogleButton/>
     </div>
   );
 }
