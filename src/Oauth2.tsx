@@ -16,7 +16,7 @@ export const Oauth2 = () => {
             axios.post('http://localhost:3001', {code})
                 .then(response => {
                     // Здесь вы можете сохранить токен доступа в состоянии или localStorage
-                    setRes(response.data);
+                    setRes(response.data.accessToken);
                 })
                 .catch(error => {
                     setRes(error.message);
