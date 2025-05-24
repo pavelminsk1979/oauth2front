@@ -62,7 +62,7 @@ export const Oauth2 = () => {
                 .then(response => {
                     console.log('response', response.data)
                     // Здесь вы можете сохранить токен доступа в состоянии или localStorage
-                    setRes(response.data.id);
+                    setRes(response.data.accessToken);
                 })
                 .catch(error => {
                     setRes(error.message);
